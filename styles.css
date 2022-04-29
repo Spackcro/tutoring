@@ -1,0 +1,334 @@
+/* Start CSS for more than one page or for all pages */
+* {
+box-sizing: border-box;
+}
+body {
+background-image: url("Assets/letter.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Libre Baskerville', serif;
+line-height: 1.4em;
+}
+header {
+min-height: 10px;
+}
+/* W3Schools responsive topnav */
+.topnav {
+background-color: #101658;
+color: #e7e5e4;
+margin: 0 auto 20px auto;
+padding-left: 16px;
+position: fixed;
+width: 100%;	
+z-index: 9999;
+}
+.topnav a {
+color: #e7e5e4;
+float: left;
+font-size: 17px;
+padding: 14px 16px;
+text-decoration: none;	
+}
+.topnav a:hover {
+background-color: #101658;
+color: #cccccc;
+}
+.topnav .icon {
+display: none;
+}
+/* End navbar */
+/* All styling containers */
+.books {
+background-color: #e7e5e4;
+box-shadow: 0 0 10px rgba(0, 0, 0, .90);
+color: #101658;
+margin: 25px auto 50px auto;
+max-width: 60rem;
+padding: 30px 16px 80px 16px;
+text-align: center;
+} 
+.about, .services, .contact {
+background-color: #e7e5e4;
+box-shadow: 0 0 10px rgba(0, 0, 0, .90);
+color: #101658;
+margin: 25px auto 0;
+max-width: 60rem;
+padding: 30px 16px 10px 16px;
+text-align: center;
+} 
+.wrapper {
+background-color: #e7e5e4;
+box-shadow: 0 0 10px rgba(0, 0, 0, .90);
+color: #101658;
+margin: 0 auto 0 auto;
+max-width: 100%;
+padding: 15px 16px 5px 16px;
+text-align: center;
+} 
+/* End styling containers */
+/* Font sizing */
+h1 {
+color: #101658;
+text-align: center;
+}
+h2 {
+color: #e7e5e4;
+text-align: center;    
+}
+h3, h5 {
+color: #101658;
+ margin-top: 50px;
+text-align: center;
+}
+h4,
+h6 {
+color: #101658;
+margin-top: 10px;
+text-align: center;
+}
+p {
+color: #101658;
+line-height: 1.5;
+margin-top: 10px;
+max-width: 1100px;
+text-align: justify;
+text-align: start;
+text-align-last: left;
+text-indent: 25px;
+}
+ul {
+color: #101658;
+line-height: 1.5;
+margin-top: 10px;
+max-width: 1100px;
+text-align: justify;
+text-align: start;
+text-align-last: left;
+}
+/* End font sizing */
+/* End CSS for all pages */
+/* Start CSS for index page */
+/* Bootstrap 5 Carousel with captions, fade, images, and prev/next icons */
+.carousel-inner img, .clients img {
+margin: 5px auto;
+max-width: 65%;
+padding: 20px; 
+}
+/* Text on carousel images */
+.carousel-caption {
+color: #e7e5e4;
+text-align: center;
+}
+/* Stack overflow changing arrow colors in Bootstrap carousel */
+.carousel-control-prev-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23101658' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23101658' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+/* End CSS for index page */
+/* Start CSS for about page */
+.about img {
+color: #101658;
+display: inline-flex;
+flex-flow: column;  
+float: left;
+margin: 10px 20px 10px 20px;
+max-width: 50%;	
+padding: 20px; 
+}
+/* End CSS for about page */
+/* Start CSS for services page */
+/* Using Flexbox and CSS Grid Together: Easy Gallery Layout with Layout Land/Jen Simmons (for index and services pages) */
+main {
+margin: 0 auto;
+max-width: 500px;
+}
+article {
+margin: 1rem 0;
+}
+@supports (display: grid) {
+main {
+margin: 0;
+max-width: 10000px;
+}
+article {
+margin: 0;
+}
+.quotations{
+display: grid;
+font-size: 80%;
+grid-gap: 1rem;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ margin: 20px auto 20px 21px;
+}
+.clients, .form {
+background-color: #e7e5e4;
+border-radius: 1rem;
+box-shadow: 0 0 10px rgba(0, 0, 0, .50);
+color: #101658;
+display: inline-flex;
+flex-flow: column;  
+margin: 10px auto;
+padding: 20px;    
+text-align: left;	
+}    
+.clients > img {
+order: -1;
+align-self: center;
+}
+/* End Flexbox and CSS Grid together */
+/* Jason Brewer's Video - Introduction to Flexbox */
+.tutoring{
+background-color: #e7e5e4;
+padding: 4rem 1rem;
+}
+.container {
+max-width: 1140px;
+width: 100%;
+margin: -80px auto;
+}
+.media-object {
+align-items: center;
+display: flex;
+padding: 4rem 1rem;    
+}
+.course-item-left, 
+.course-item-right {
+display: flex;
+flex: 1;
+justify-content: center;
+}
+.blurb-wrapper-right,
+.blurb-wrapper-left {
+flex: 1;
+}
+.course-item-left,
+.blurb-wrapper-left {
+order: 1;
+}
+.course-item-right,
+.blurb-wrapper-right {
+order: 2;
+}
+.course-item-right, .course-item-left {
+height: 180px;
+width: 180px;
+}
+.blurb-wrapper {
+flex: 1;
+}
+.blurb-header {
+font-size: 20px;
+ margin: 50px auto 0 auto; 
+}
+.blurb-info {
+color: #101658;
+font-size: 14px;
+}
+/* End Jason Brewer's Flexbox */
+/* End CSS for services page */
+/* Start CSS for contact us page */
+/* W3school form and styling */
+label, input {
+display: block;
+margin: 10px auto 0 auto;
+text-align: center;
+}  
+.choices {
+margin: 10px auto 0 auto;
+padding: 10px 40px 0 40px;
+}
+select, 
+input[type="text"],
+[type="email"],
+[type="message"],
+[textarea="message"],
+textarea {
+color: #101658;
+display: block;
+margin: auto;    
+max-width: 75%;
+padding: 12px 20px;
+text-align: center;	
+}
+input[type="submit"] {
+background-color: #101658;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, .50);
+color: #e7e5e4;
+cursor: pointer;
+margin: 10px auto 10px auto;
+min-width: 1%;
+overflow: auto;
+padding: 10px 40px;
+}
+input[type="submit"]:hover {
+background-color: #101658;
+box-shadow: 0 0 10px rgba(0, 0, 0, .20);
+color: #cccccc;
+overflow: auto;
+}
+table {
+width: 100%;
+}
+th, td {
+color: #101658;
+padding: 0 10px 5px 10px;
+text-align: center;    
+}
+tr.hover {
+background-color: #c3e6e5;
+}
+li {
+margin-right: 10px;
+}
+/* Contact info */
+.emailphone {
+color: #e7e5e4;
+margin: 20px auto;
+max-width: 60rem;
+padding: 10px;
+text-align: center;
+}
+/* End CSS for contact page */
+/* W3schools responsive topnav */
+@media screen and (max-width: 600px) {
+.topnav a:not(:first-child) {
+display: none;
+}
+.topnav a.icon {
+float: right;
+display: block;
+}
+.topnav.responsive {
+position: relative;
+}
+.topnav.responsive .icon {
+position: absolute;
+right: 0;
+top: 0;
+}
+.topnav.responsive a {
+float: none;
+display: block;
+text-align: left;
+}
+/* Jason Brewer's CSS Flexbox Intro */
+.media-object {
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+.course-item-right, 
+.course-item-left {
+order: 1;
+flex-direction: column;
+}
+.blurb-wrapper-left,
+.blurb-wrapper-right {
+order: 2;
+padding-top: 2rem;
+}
